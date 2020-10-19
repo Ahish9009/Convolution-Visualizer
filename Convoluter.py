@@ -2,17 +2,21 @@ import math
 import matplotlib.pyplot as plt
 
 def f(x):
+    
+   # y = 1, x >= 0
+   #     0, otherwise 
+   if (x >=0):
+       return 1
+   return 0
 
-##    if (x >=0):
-##        return 1
-##    return 0
+    # y = 1, x in [-1,1]
+    #     0, otherwise
+#     if (x >= -1 and x <= 1):
+#         return 1
+#     return 0
 
-    if (x >= -1 and x <= 1):
-        return 1
-    return 0
-
-
-    return abs(x)
+    # y = |x|
+#     return abs(x)
     
 ##    if (x >= -1 and x <= 0):
 ##        return 1+x
